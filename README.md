@@ -17,12 +17,6 @@ Et professionelt backup program til The Sims 4, der automatisk sikkerhedskopiere
 - 🔗 **Direkte link** - Klik på ts4.topping.dk for mere info
 - 🚀 **Ingen installation** - Kør direkte fra .exe filen
 
-## 📥 Download
-
-**[Download seneste version](https://github.com/DIT-BRUGERNAVN/Sims4-Backup/releases/latest)**
-
-Download `Sims4Backup.exe` og dobbeltklik for at køre - det er så simpelt!
-
 ## 🚀 Sådan bruger du det
 
 1. **Første gang:**
