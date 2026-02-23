@@ -1,156 +1,119 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sims4 Backup</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-            background: linear-gradient(135deg, #e8f0f2 0%, #d4e4e8 100%);
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 40px 20px;
-        }
-        
-        .container {
-            max-width: 800px;
-            text-align: center;
-        }
-        
-        .icon {
-            width: 150px;
-            height: 150px;
-            margin: 0 auto 30px;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            border-radius: 30px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-        }
-        
-        .icon img {
-            width: 100px;
-            height: 100px;
-        }
-        
-        h1 {
-            font-size: 48px;
-            color: #333;
-            margin-bottom: 20px;
-        }
-        
-        .tagline {
-            font-size: 24px;
-            color: #666;
-            margin-bottom: 50px;
-        }
-        
-        .info-box {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
-        }
-        
-        .info-box p {
-            font-size: 18px;
-            line-height: 1.8;
-            color: #555;
-        }
-        
-        .download-section {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
-        }
-        
-        .download-section h2 {
-            font-size: 32px;
-            margin-bottom: 20px;
-            color: #333;
-        }
-        
-        .version {
-            color: #888;
-            margin-bottom: 30px;
-        }
-        
-        .download-btn {
-            display: inline-block;
-            background: #3caad6;
-            color: white;
-            padding: 15px 40px;
-            border-radius: 10px;
-            text-decoration: none;
-            font-size: 18px;
-            font-weight: bold;
-            transition: background 0.3s;
-        }
-        
-        .download-btn:hover {
-            background: #2a9ac5;
-        }
-        
-        .features {
-            margin-top: 50px;
-            text-align: left;
-        }
-        
-        .feature {
-            margin: 15px 0;
-            font-size: 16px;
-            color: #555;
-        }
-        
-        .feature::before {
-            content: "✅ ";
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Sims 4 Backup</title>
+<style>
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  background: linear-gradient(135deg, #c7f9cc, #a0c4ff);
+  color: #2d3436;
+}
+
+.container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  background: white;
+  padding: 40px;
+  border-radius: 22px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  margin-bottom: 30px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  color: #00b894;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  opacity: 0.7;
+}
+
+.panel {
+  background: white;
+  padding: 25px 30px;
+  border-radius: 18px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  margin-bottom: 20px;
+}
+
+.panel h2 {
+  margin-top: 0;
+  color: #0984e3;
+}
+
+ul {
+  padding-left: 20px;
+}
+
+.download-knap {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 28px;
+  background: #00b894;
+  color: white;
+  text-decoration: none;
+  border-radius: 14px;
+  font-weight: bold;
+  transition: 0.2s ease;
+}
+
+.download-knap:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.2);
+}
+
+.download-knap.sekundær {
+  background: #0984e3;
+}
+</style>
 </head>
 <body>
-    <div class="container">
-        <div class="icon">
-            <img src="https://github.com/ToppingSims/Sims4-Backup/raw/main/ToppingSimsBackup.ico" alt="Sims4 Backup Icon">
-        </div>
-        
-        <h1>Sims4 Backup</h1>
-        <p class="tagline">Mist aldrig dine fremskridt igen</p>
-        
-        <div class="info-box">
-            <p>
-                Et simpelt værktøj der automatisk laver backup af dine vigtigste Sims 4 filer. 
-                Vælg hvilke mapper du vil sikkerhedskopiere (Mods, saves, Tray), 
-                og programmet tager sig af resten.
-            </p>
-        </div>
-        
-        <div class="download-section">
-            <h2>Download</h2>
-            <p class="version">Seneste version: v1.0.0</p>
-            
-            <a href="https://github.com/ToppingSims/Sims4-backup/releases/latest/download/Sims4Backup.exe" class="download-btn">
-                📥 Download til Windows
-            </a>
-            
-            <div class="features">
-                <div class="feature">Automatisk backup af Mods, saves og Tray</div>
-                <div class="feature">Vælg selv hvilke mapper der skal backup'es</div>
-                <div class="feature">Valgbar backup placering</div>
-                <div class="feature">Ingen installation nødvendig</div>
-            </div>
-        </div>
-    </div>
+
+  <div class="container">
+    <header class="hero">
+      <h1>Sims 4 Backup</h1>
+      <p>Fordi dine simmere fortjener bedre end katastrofer.</p>
+      <a class="download-knap" href="https://github.com/ToppingSims/Sims4-backup/releases/latest/download/Sims4Backup.exe">
+        Download nyeste version
+      </a>
+    </header>
+
+    <section class="panel">
+      <h2>Funktioner</h2>
+      <ul>
+        <li>Backup med ét klik</li>
+        <li>Letvægts & drama-fri</li>
+        <li>Ingen teknisk trolddom nødvendig</li>
+      </ul>
+    </section>
+
+    <section class="panel">
+      <h2>Download</h2>
+      <p><strong>Nyeste version:</strong> v1.0.0</p>
+      <p><strong>Platform:</strong> Windows</p>
+      <a class="download-knap sekundær" href="https://github.com/ToppingSims/Sims4-backup/releases/latest/download/Sims4Backup.exe">
+        Hent Sims4Backup.exe
+      </a>
+    </section>
+
+    <section class="panel">
+      <h2>Ændringer</h2>
+      <p><strong>v1.0.0</strong></p>
+      <ul>
+        <li>Første release</li>
+        <li>Stressniveau reduceret en smule</li>
+      </ul>
+    </section>
+  </div>
+
 </body>
 </html>
