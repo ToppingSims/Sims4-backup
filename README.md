@@ -1,6 +1,6 @@
 # The Sims 4 Backup Program
 
-Et professionelt backup program til The Sims 4, der automatisk sikkerhedskopierer dine Mods, saves og Tray mapper.
+Et lille backup program til The Sims 4, der automatisk sikkerhedskopierer dine Mods, saves og Tray mapper.
 
 ![The Sims 4 Backup](https://img.shields.io/badge/Sims%204-Backup%20Tool-3caad6)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue)
