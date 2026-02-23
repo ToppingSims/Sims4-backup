@@ -118,7 +118,7 @@ Pull requests er velkomne! Hvis du vil bidrage:
 
 ## 📄 Licens
 
-Dette projekt er licenseret under MIT License - se [LICENSE](LICENSE) filen for detaljer.
+Dette projekt er licenseret under MIT License - se [LICENSE](https://opensource.org/license/mit) filen for detaljer.
 
 ## 👤 Forfatter
 
